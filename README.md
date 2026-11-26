@@ -72,7 +72,9 @@ Output: `src-tauri/target/release/bundle/nsis/Folio_0.1.0_x64-setup.exe`.
 Installing it registers Folio for `.md` and `.markdown`; pick it once under
 "Open with" to make it the default.
 
-## Placeholders
+## Icon
 
-The app icon is still Tauri's default icon and the wordmark is plain text.
-Both are placeholders until a real mark exists.
+`assets/icon.svg` is the source: a folded page with the vermilion rubric rule,
+two text lines and a small flowchart, in the Paper palette. Regenerate the sizes with
+`npx tauri icon assets/icon.svg`, then delete the `android/` and `ios/` folders it
+also writes into `src-tauri/icons/`. The start-screen wordmark is still plain text.

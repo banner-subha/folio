@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!--
+    Folio app icon, light (Paper theme palette).
+    A folded folio page: the vermilion rubric rule that sits over every h2 in the app,
+    two lines of text, and a two-box flowchart for the Mermaid diagrams Folio draws.
+    Source for `npx tauri icon assets/icon.svg`.
+  -->
+  <rect x="16" y="16" width="992" height="992" rx="224" fill="#f6f1e6"/>
+  <rect x="16" y="16" width="992" height="992" rx="224" fill="none" stroke="#1e1a15" stroke-opacity="0.10" stroke-width="8"/>
+
+  <!-- Page content is scaled up around the center so it still fills the tile at 16-32px. -->
+  <g transform="translate(512 512) scale(1.16) translate(-512 -512)">
+  <!-- page with a folded corner -->
+  <path d="M300 168 H574 L724 318 V856 H300 Z" fill="#fffdf7" stroke="#1e1a15" stroke-width="30" stroke-linejoin="round"/>
+  <path d="M574 168 V318 H724 Z" fill="#ece4d4" stroke="#1e1a15" stroke-width="30" stroke-linejoin="round"/>
+
+  <!-- rubric: the one accent -->
+  <rect x="372" y="256" width="140" height="40" rx="6" fill="#a3311c"/>
+
+  <!-- text lines -->
+  <path d="M372 372 H652 M372 436 H596" stroke="#4a4137" stroke-width="28" stroke-linecap="round" fill="none"/>
+
+  <!-- flowchart -->
+  <path d="M432 604 V720 H532" stroke="#4a4137" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="372" y="520" width="120" height="84" rx="16" fill="#f6f1e6" stroke="#1e1a15" stroke-width="22"/>
+  <rect x="532" y="678" width="120" height="84" rx="16" fill="#f6f1e6" stroke="#1e1a15" stroke-width="22"/>
+  </g>
+</svg>
